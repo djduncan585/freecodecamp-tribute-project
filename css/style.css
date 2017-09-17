@@ -2,18 +2,19 @@
   padding: 0;
   border: 0;
   margin: 0;
-  width: 100%;
-  height: auto;
+  width: 100vw;
+  height: 74.4125vw;
   position: relative;
 }
 .jumbotron-text {
   font-family: "Work Sans", sans-serif;
   font-weight: 900;
-  font-size: 0; /*Font size will be defined in JS in relation to width of jumbotron image*/
+  font-size: 9.75vw !important;
   color: white !important;
   text-shadow: 5px 5px 10px black;
   opacity: 0.95;
   position: relative;
+  top: -40vw;
 }
 .container-fluid {
   position: relative;
