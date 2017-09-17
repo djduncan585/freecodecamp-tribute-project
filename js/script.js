@@ -16,14 +16,11 @@ let jtPath = document.getElementsByClassName("jumbotron-text");
 let cfPath = document.getElementsByClassName("container-fluid")[0];
 let divPath = document.body.getElementsByClassName("jumbotron")[0];
 let jtl = document.getElementsByClassName("jumbotron-text").length;
-/*let height = imageElement[0].height;
+let height = imageElement[0].height;
 let textPosition = height * -0.45;
-let width = imageElement[0].width;*/
+let width = imageElement[0].width;
 /* This is where the h1 text gets properly sized and positioned in relation to the jumbotron image width and height */
 function sizeText() {
-  let height = imageElement[0].height;
-  let textPosition = height * -0.45;
-  let width = imageElement[0].width;
   addNewStyle(`.jumbotron-text{font-size: ${width * 0.1}px !important;
   padding: 0; border: 0; margin: 0;}`);
   for (let i = 0; i < jtl; i++) {
@@ -32,4 +29,3 @@ function sizeText() {
   divPath.style.height = `${height}px`;
 }
 sizeText();
-window.addEventListener("resize", sizeText());
